@@ -1,0 +1,16 @@
+<div class="col-lg-offset-3 col-lg-6">
+    <h2 class="text-center">Login</h2>
+    <p> {{model | json}}</p>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1"> Username</label>
+            <input type="text" class="form-control" [(ngModel)]="model.username" id="exampleInputEmail1" placeholder="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">User name</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="model.password" placeholder="password">
+        </div>
+        <p>Haven't you create account yet! <a class="btn btn-link" (click)="singupClick()">Signup</a> here</p>
+        <button type="submit" class="btn btn-primary" (click)="loginBtn()">Login</button>
+    </form>
+</div>
